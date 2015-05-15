@@ -234,7 +234,7 @@ stat(aggDT1$steps) # mean and median of the original data
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-I created a new factor variable **weekcat** in **impDT** with two levels -- ¡°weekday¡± and ¡°weekend¡± indicating whether a given date is a weekday or weekend day.
+I created a new factor variable **weekcat** in **impDT** with two levels -- "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
 
 
 ```r

@@ -178,7 +178,7 @@ stat(aggDT1$steps) # mean and median of the original data
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-I created a new factor variable **weekcat** in **impDT** with two levels -- ¡°weekday¡± and ¡°weekend¡± indicating whether a given date is a weekday or weekend day.
+I created a new factor variable **weekcat** in **impDT** with two levels -- "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
 
 ```{r weekcat}
 impDT <- within(impDT, {
@@ -197,7 +197,7 @@ aggDT4 <- with(impDT, aggregate(steps ~ int_scale + weekcat, FUN = mean))
 
 This is the final panel plot containing a time series plot of the 5-minute interval and the average number of steps taken across all weekday days or weekend days, made by lattice plotting system.
 
-```{r figure 4, fig.height = 6.5, fig.width = 8}
+```{r figure 4, fig.height = 7, fig.width = 7}
 if(!is.element("lattice", installed.packages()[,1])) {
     print("Installing packages")
     install.packages("lattice")
