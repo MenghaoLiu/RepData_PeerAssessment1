@@ -133,8 +133,8 @@ stat(aggDT3$steps)
 
 stat(aggDT1$steps)
 
-# Create a new factor variable weekcat in impDT with two levels -- ¡°weekday¡± 
-# and ¡°weekend¡± indicating whether a given date is a weekday or weekend day
+# Create a new factor variable weekcat in impDT with two levels -- "weekday" 
+# and "weekend" indicating whether a given date is a weekday or weekend day
 
 impDT <- within(impDT, {
     weekcat <- NA
