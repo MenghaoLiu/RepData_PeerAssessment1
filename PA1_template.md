@@ -72,7 +72,7 @@ Here is a histogram of the total number of steps taken each day generated with *
 
 ```r
 opar <- par(no.readonly = T)
-par(mar = c(5, 5, 4, 1), cex = .85, las = 1)
+par(mar = c(5, 5, 4, 1), las = 1)
 with(aggDT1, hist(steps, breaks = 20, col = "steelblue", 
                   xlab = "Total steps", 
                   main = "Histogram of the total number of steps by day")
@@ -128,7 +128,7 @@ Here is a time series plot of the 5-minute interval and the average number of st
 
 
 ```r
-par(mar = c(5, 5, 4, 1), cex = .85, las = 1)
+par(mar = c(5, 5, 4, 1), las = 1)
 with(aggDT2, plot(int_scale, steps, type = "l",
                   xlab = "5-minute interval (by Hour)", 
                   ylab = "Average steps", 
@@ -197,7 +197,7 @@ Here is a histogram of the total number of steps taken each day generated from N
 
 
 ```r
-par(mar = c(5, 5, 4, 1), cex = .85, las = 1)
+par(mar = c(5, 5, 4, 1), las = 1)
 with(aggDT3, hist(
     steps, breaks = 20, col = "steelblue", 
     xlab = "Total steps",

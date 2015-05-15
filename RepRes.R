@@ -39,7 +39,7 @@ aggDT1 <- with(myDT, aggregate(steps ~ date, FUN = sum, na.rm = T))
 # in base plotting system
 
 opar <- par(no.readonly = T)
-par(mar = c(5, 5, 4, 1), cex = .85, las = 1)
+par(mar = c(5, 5, 4, 1), las = 1)
 with(aggDT1, hist(steps, breaks = 20, col = "steelblue", 
                   xlab = "Total steps", 
                   main = "Histogram of the total number of steps by day")
@@ -77,7 +77,7 @@ aggDT2 <- with(myDT, aggregate(steps ~ interval + int_scale, FUN = mean,
 # steps taken using base plotting system
 
 opar <- par(no.readonly = T)
-par(mar = c(5, 5, 4, 1), cex = .85, las = 1)
+par(mar = c(5, 5, 4, 1), las = 1)
 with(aggDT2, plot(int_scale, steps, type = "l",
                   xlab = "5-minute interval (by Hour)", 
                   ylab = "Average steps", 
@@ -116,7 +116,7 @@ aggDT3 <- with(impDT, aggregate(steps ~ date, FUN = sum))
 # NAs filled-in data 
 
 opar <- par(no.readonly = T)
-par(mar = c(5, 5, 4, 1), cex = .85, las = 1)
+par(mar = c(5, 5, 4, 1), las = 1)
 with(aggDT3, hist(
     steps, breaks = 20, col = "steelblue", 
     xlab = "Total steps",
